@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+         body{
+            background-color: black;
+            color: white;
+
+        }
+        .image-container {
+            display: flex; /* Use flexbox */
+            flex-wrap: wrap; /* Wrap items to the next line when necessary */
+            justify-content: space-around; /* Horizontally distribute items with space between */
+        }
+
+        .image-text {
+            border: 1px solid hsl(0, 0%, 80%);
+            box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            max-width: 250px;
+            flex: 1 1 250px; /* Flex item properties */
+        }
+
+        .image-text img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        #p1 {
+            float: left;
+            margin-right: 15px;
+            height: 150px;
+            border-radius: 15%;
+        }
+        a{
+            color:white;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap into multiple lines */
+            justify-content: center; /* Center items horizontally */
+            align-items: center; /* Center items vertically */
+        }
+        .image-item {
+            flex: 0 0 calc(33.33% - 20px); /* Each item takes up one-third of the container width with 20px margin on each side */
+            margin: 10px; /* Add margin around each item */
+            text-align: center; /* Center the content horizontally */
+        }
+        #img {
+            border-radius: 30%; /* Makes the images round */
+            width: 200px; /* Adjust the width as needed */
+            height: 200px; /* Adjust the height as needed */
+            margin-bottom: 10px; /* Add margin below each image */
+        }
+        .dropdown{ 
+            display: inline-block; 
+        } 
+        .dropdown button{ 
+            background-color: hsl(0, 0%, 80%); color: white; padding: 10px 15px; border:none; cursor: pointer; 
+        } 
+        .dropdown a{ 
+            display: block; color:black; text-decoration: none; padding:10px 15px; 
+        } 
+        .dropdown .content{ 
+            display:none; position: absolute; background-color: hsl(0, 0%, 95%); min-width: 100px; box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8); 
+        } 
+        .dropdown a:hover{ 
+            background-color: hsl(0, 0%, 70%); 
+        } 
+        .dropdown:hover .content{
+             display:block; 
+            }
+             .dropdown:hover button{ 
+                background-color: hsl(0, 0%, 70%); 
+            }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="pictures/note.jpg"  height="100px" id="p1">
+        <br><br>
+        <h1>Lyricshub.</h1>
+        <h2>Indulge in one of the many genres we have below!</h2>
+    </center>
+    
+    <a href="home.html">
+        <button>Homepage</button>
+    </a>
+    <br><br>
+    <div class="dropdown">
+        <button>Genre</button>
+        <div class="content">
+            <a href="rap.html">Rap/Hip Hop</a>
+            <a href="pop.html">Pop</a>
+            <a href="randb.html">R&B</a>
+            <a href="country.html">Country</a>
+        </div>
+    </div>
+    <h3>Top Artists of the year 2024 so far:</h3>
+    <div class="image-container">
+        <div class="image-item">
+            <img src="pictures/taylorswift.jpg" id="img" >
+            <a href="taylorswift.html"><p>Taylor Swift</p></a>
+        </div>
+        <div class="image-item">
+            <img src="pictures/drake.jpg" id="img">
+            <a href="drake.html"><p>Drake</p></a>
+    
+        </div>
+        <div class="image-item">
+            <img src="pictures/theweekend.jpg" id="img">
+            <a href="theweekend.html">The Weekend</p></a>
+        </div>
+        <div class="image-item">
+            <img src="pictures/eminem.jpg" id="img">
+            <a href="eminem.html"><p>Eminem</p></a>
+        </div>
+        <div class="image-item">
+            <img src="pictures/justinbieber.jpg" id="img">
+            <a href="justinbieber.html"><p>Justin Bieber</p></a>
+        </div>
+        <div class="image-item">
+            <img src="pictures/rihanna.jpg" id="img">
+            <a href="rihanna.html"><p>Rihanna</p></a>
+        </div>
+        <div class="image-item">
+            <img src="pictures/badbunny.jpg" id="img">
+            <a href="badbunny.html"><p>Bad Bunny</p></a>
+        </div>
+        <div class="image-item">
+            <img src="pictures/partynextdoor.jpg" id="img">
+            <a href="partynextdoor.html"><p>PARTYNEXTDOOR</p></a>
+        </div>
+        <div class="image-item">
+            <img src="pictures/dave.jpg" id="img">
+            <a href="dave.html"><p>Dave</p></a>
+        </div>
+    </div>
+</body>
+</html>

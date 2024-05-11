@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1>Welcome to LyricsHub!</h1>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+
+        }
+        .image-container {
+            display: flex; /* Use flexbox */
+            flex-wrap: wrap; /* Wrap items to the next line when necessary */
+            justify-content: space-around; /* Horizontally distribute items with space between */
+        }
+
+        .image-text {
+            border: 1px solid hsl(0, 0%, 80%);
+            box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            max-width: 250px;
+            flex: 1 1 250px; /* Flex item properties */
+        }
+
+        .image-text img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        #p1 {
+            float: left;
+            margin-right: 15px;
+            height: 150px;
+            border-radius: 15%;
+        }
+        a{
+            color:white;
+        }
+        #button{
+            height: 30px;
+            width: 350px;
+
+        }
+    </style>
+</head>
+<body>
+<link rel="icon" href="pictures/note.jpg">
+<h2>LyricsHub</h2>
+<img src="pictures/note.jpg" height="100px" id="p1">
+<p> Welcome to "LyricsHub," your ultimate destination for the soulful poetry that transcends melodies. Immerse yourself in a symphony of words where emotions find their lyrical home. Whether you seek the rhythm of nostalgia or the beats of a new anthem, LyricsHub is your poetic sanctuary. Explore a diverse universe of songs, where each lyric unfolds like a chapter in the book of life. Unveil the tales woven into music's embrace and sing along to the harmonies that echo the sentiments of the human experience. Let LyricsHub be your guide through the ever-evolving landscape of melodies and emotions, where every verse tells a story worth listening to.</p>
+
+<a href="login.html">
+    <button id="button">Log in</button>
+</a>
+
+<button id="button" onclick="doSomething()">Log out</button>
+
+
+<hr>
+<p>Below are a few examples of the kind of song lyrics we offer here at LyricsHub, Enjoy!</p>
+<div class="image-container">
+    <div class="image-text">
+        <img src="pictures/partyalbum.jpg" height="150px" alt="PARTYNEXTDOOR album cover">
+        <br>
+        <a href="index.html" style="color:white">
+            Break from Toronto - PARTYNEXTDOOR
+        </a>
+    </div>
+    <div class="image-text">
+        <img src="pictures/drakealbum.jpg" height="150px" alt="Drake album cover">
+        <br>
+        <a href="keepthefamilyclose.html">
+            Keep the Family Close - Drake
+        </a>
+    </div>
+    <div class="image-text">
+        <img src="pictures/davealbum.jpg" height="150px" alt="Dave album cover">
+        <br>
+        <a href="drama.html">
+            Drama - Dave
+        </a>
+    </div>
+</div>
+
+<div class="image-container">
+    <div class="image-text">
+        <img src="pictures/jorjaalbum.jpg" height="150px" alt="JorjaSmith album cover">
+        <br>
+        <a href="bluelights.html">
+            Blue Lights - Jorja Smith
+        </a>
+    </div>
+    <div class="image-text">
+        <img src="pictures/kaynealbum.jpg" height="150px" alt="KayneWest album cover">
+        <br>
+        <a href="power.html">
+            Power - Kanye West
+        </a>
+    </div>
+    <div class="image-text">
+        <img src="pictures/szaalbum.jpg" height="150px" alt="SZA album cover">
+        <br>
+        <a href="brokenclocks.html">
+            Broken Clocks - SZA
+        </a>
+    </div>
+</div>
+
+<hr>
+<p>Any Queries or Questions, including Song request please don't hesitate to contact us at -</p>
+<a href="mailto:lyricshub1@gmail.com">
+    Contact us at Lyric Hub
+</a>
+<hr>
+<h4>Please don't hesitate to leave a review of our page below:</h4>
+<input type="text" style="height: 200px; width: 490px;">
+<br>
+<br>
+<button onclick="sendReview()">Submit</button>
+<hr>
+<footer>
+    Author: Osaze Irhue<br>
+    &copy; Copyright Reserved<br>
+    <small><a href="lyricHub1@gmail.com">lyricHub1@gmail.com</a></small>
+</footer>
+
+<script>
+    function doSomething() {
+        window.alert('User Successfully logged out!');
+    }
+
+    function sendReview() {
+        location.reload();
+        window.alert('Review Successfully Sent!');
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <style>
+          .image-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.image-text {
+    text-align: center; /* Center the content horizontally */
+    margin: 0 10px; /* Add space between images */
+}
+.image-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap into multiple lines */
+            justify-content: center; /* Center items horizontally */
+            align-items: center; /* Center items vertically */
+        }
+        .image-item {
+            flex: 0 0 calc(33.33% - 20px); /* Each item takes up one-third of the container width with 20px margin on each side */
+            margin: 10px; /* Add margin around each item */
+            text-align: center; /* Center the content horizontally */
+        }
+        #img {
+            border-radius: 30%; /* Makes the images round */
+            width: 200px; /* Adjust the width as needed */
+            height: 200px; /* Adjust the height as needed */
+            margin-bottom: 10px; /* Add margin below each image */
+        }
+        .dropdown{ 
+            display: inline-block; 
+        } 
+        .dropdown button{ 
+            background-color: hsl(0, 0%, 80%); color: white; padding: 10px 15px; border:none; cursor: pointer; 
+        } 
+        .dropdown a{ 
+            display: block; color:black; text-decoration: none; padding:10px 15px; 
+        } 
+        .dropdown .content{ 
+            display:none; position: absolute; background-color: hsl(0, 0%, 95%); min-width: 100px; box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8); 
+        } 
+        .dropdown a:hover{ 
+            background-color: hsl(0, 0%, 70%); 
+        } 
+        .dropdown:hover .content{
+             display:block; 
+            }
+             .dropdown:hover button{ 
+                background-color: hsl(0, 0%, 70%); 
+            }
+    </style>
+    <body>
+        <center>
+            <img src="pictures/download.png" >
+            <br><br>
+            <h1>Lyricshub.</h1>
+        </center>
+        <a href="home.html">
+            <button>Homepage</button>
+        </a>
+        <br>
+        <br>
+        <div class="dropdown">
+            <button>Genre</button>
+            <div class="content">
+                <a href="rap.html">Rap/Hip Hop</a>
+                <a href="pop.html">Pop</a>
+                <a href="randb.html">R&B</a>
+                <a href="country.html">Country</a>
+            </div>
+        </div>
+
+        <center><h1>Country</h1></center>
+        
+        <div class="image-container">
+            <div class="image-text">
+                <img src="pictures/jorjaalbum.jpg" height="150px" alt="JorjaSmith album cover">
+                <br>
+                <a href="bluelights.html">
+                   Blue Lights - Jorja Smith
+                </a>
+            </div>
+            <div class="image-text">
+                <img src="pictures/kaynealbum.jpg" height="150px" alt="KayneWest album cover">
+                <br>
+                <a href="power.html">
+                    Power - Kanye West
+                </a>
+            </div>
+            <div class="image-text">
+                <img src="pictures/szaalbum.jpg" height="150px" alt="SZA album cover">
+                <br>
+                <a href="brokenclocks.html">
+                    Broken Clocks - SZA
+                </a>
+            </div>
+        </div>
+        <footer>
+            Author: Osaze Irhue<br>
+            &copy; Copyright Reserved<br>
+        <small><a href="lyricHub1@gmail.com">lyricHub1@gmail.com</a></small>
+        </footer>
+    </body>
+</html>
